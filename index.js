@@ -7,12 +7,16 @@ const getNextTime = require('./js/getNextTime')
 const getTableDate = require('./js/getTableDate')
 const log = require('./js/log')
 
+/** Time to search from. */
 let timeNext = initialTime
 
 /**
  * Change configs.js first.
  */
 
+/** 
+ * Prepares the query and run its execution.
+ */
 async function prepareNextQuery(time) {
   let query = createQuery(timeNext)
   let timeNextFormatted = getTimeFormatted(timeNext)

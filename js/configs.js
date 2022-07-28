@@ -12,26 +12,25 @@ delta = 15
 let nodes = {
   1: {
     node: 1,
-    user: 'dblog4',
-    db: 'funprod'
+    user: 'dblog',
+    db: 'fprod'
   },
   2: {
     node: 2,
-    user: 'db2log4',
-    db: 'funprod2'
+    user: 'db2log',
+    db: 'fprod2'
   },
   3: {
     node: 3,
-    user: 'db3log1',
-    db: 'funprod3'
+    user: 'db3log',
+    db: 'fprod3'
   }
 }
 /** Current connection parameters. */
 let node = nodes[nodeNo]
 
 /** Public key for SSH if needed. */
-let key = './id'
-key = ''
+let key = ''
 /** SSH host. */
 let host = 'example.com'
 /** SSH connection command. */
